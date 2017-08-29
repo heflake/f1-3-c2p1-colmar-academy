@@ -1,0 +1,380 @@
+body {
+  font-size: 16px;
+  color: rgb(72,72,72);
+}
+
+/*Notes for reviewer:
+-The mobile version seems to work in Mozilla but not Chrome - not sure why
+-I know the organization could use some work - any tips appreciated!
+
+Thank you!
+Hannah
+*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+@media only screen and (min-width: 481px) {
+  .mobile {
+    display: none;
+  }
+  #mobile {
+    display: none;
+  }
+}
+
+header {
+  width: 100%;
+  height: 64px;
+  z-index: 50;
+  background: white;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+
+nav .mobile {
+  padding: 5px;
+  margin: 16px;
+  height: 64px;
+}
+
+.mobile a {
+  padding: 30px;
+}
+
+
+.thin {
+  font-weight: 30%;
+}
+
+.desktop {
+  width: 100%;
+  display: inline;
+  width: 300px;
+  z-index: 0;
+}
+
+.thin {
+  font-weight: 20;
+}
+
+.desktopnav {
+  width: 450px;
+  float: right;
+  padding-top: 10px;
+}
+
+.desktop img, h2, li {
+  display: inline-block;
+}
+
+.desktop li {
+  padding: 10px;
+}
+
+.desktop a {
+  text-decoration: none;
+  color: black;
+}
+
+.button {
+  padding: 8px;
+  width: 300px;
+  background-color: rgb(72,72,72);
+  color: white;
+  text-align: center;
+}
+
+.desktop img {
+  margin-left: 24px;
+  padding-top: 10px;
+  z-index: 20;
+  height: 100%;
+}
+
+.logo h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  margin-top: 25px;
+  z-index: 10;
+  position: absolute;
+}
+
+.logo {
+  display: inline-block;
+  width: 400px;
+  height: 64px;
+}
+
+/*Learn Something New Every Day section*/
+
+.learn {
+  width: 100%;
+  height: 450px;
+  margin-top: 24px;
+  display: flex;
+  background-color: LightBlue;
+}
+
+.learn img {
+  display: inline-block;
+  width: 547px;
+  margin-left: 24px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.learn .text{
+  width: 365px;
+  margin-left: 24px;
+  margin-top: 100px;
+}
+
+
+
+/*It Doesn't Hurt to Keep Practicing*/
+
+.practice {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.practice img {
+  width: 547px;
+}
+
+.practice .left {
+  margin-left: 24px;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  width: 547px;
+}
+
+.practice .textboxes {
+  width: 365px;
+  margin-top: 16px;
+  margin-left: 8px;
+}
+
+.practice .textboxes img {
+  width: 128px;
+  height: 128px;
+}
+.quote {
+  font-size: 10px;
+}
+
+.orientation, .campus, .lecture {
+  display: flex;
+  font-size: 12px;
+  padding: 16px;
+}
+
+.orientation .text, .campus .text, .lecture .text {
+  padding: 10px;
+}
+
+.lecture {
+  background-color: LightBlue;
+}
+
+/*Start Learning*/
+
+.startlearning {
+  width: 100%;
+  background-color: LightBlue;
+  z-index: 0;
+  margin-top: 24px;
+  justify-content: center;
+}
+
+.start {
+  padding: 32px 0px 0px 0px;
+  text-align: center;
+}
+
+.box {
+  width: 100%;
+  display: flex;
+  margin: 0px 72px 0px 72px;
+  flex-basis: 1;
+  flex-wrap: wrap;
+}
+
+.box img {
+  width: 330px;
+  vertical-align: bottom;
+}
+
+.software, .computerart, .design, .data, .business, .marketing {
+  padding: 0px 32px 32px 32px;
+  margin: 0;
+}
+
+.box .text {
+  height: 180px;
+  width: 298px;
+  background-color: white;
+  padding: 16px;
+  margin: 0;
+}
+
+/*Thesis Exhibit*/
+.title {
+  text-align: center;
+}
+
+.thesis {
+display: flex;
+orientation: row;
+width: 100%;
+}
+
+.left .text {
+  width: 60%;
+  margin-left: 24px;
+}
+
+.right .text {
+  width: 45%;
+  margin: 16px 16px 24px 16px;
+}
+
+.right .textboxes {
+  display: inline-block;
+  width: 200px;
+  height: 500px;
+}
+
+.thesis .textboxes {
+  display: inline-block;
+  margin: 0px;
+  width: 700px;
+}
+
+.fisma, .nowandthen {
+  display: inline-flex;
+}
+
+
+.fisma {
+  background-color: LightGrey;
+  margin-top: 16px;
+}
+
+.thesis .textboxes img {
+  width: 175px;
+  display: inline-block;
+  margin-left: 24px;
+  padding-top: 16px;
+}
+
+video {
+   display: inline-block;
+   width: 700px;
+   margin-left: 24px;
+   margin-top: 16px;
+   margin-bottom: 32px;
+   margin-right: 16px;
+}
+
+/* Footer */
+
+.footer {
+  margin-top: 48px;
+}
+
+.footer .left {
+  float: left;
+}
+
+.footer .right {
+  float: right;
+}
+
+@media only screen and (max-width: 480px) {
+body {
+  width: 480px;
+}
+  .desktop, #desktop, .practice .left, .learn, .header, .startlearning {
+    display: none;
+  }
+
+.top {
+height: 650px;
+display: inline-block;
+background-color: LightBlue;
+margin-bottom: 32px;
+}
+
+.top img {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.top .text-mobile {
+  margin: 0px 0px 0px 32px;
+  padding: 0px 0px 0px 32px;
+}
+
+.middle {
+  padding: 16px;
+  margin: 16px;
+}
+
+.middle .text {
+  margin-left: 16px;
+}
+
+.middle img {
+  width: 375px;
+}
+
+.start-learning-mobile {
+  display: flex;
+  width: 450px;
+}
+
+.start-learning-mobile li {
+  display: block;
+  background-color: LightGrey;
+  padding: 16px 32px 16px 16px;
+  margin: 8px 8px 8px 0px;
+  font-size: 18px;
+  width: 300px;
+}
+
+.video-mobile {
+  width: 480px;
+  height: 400px;
+}
+
+.bottom h1 {
+  text-align: center;
+}
+
+video {
+  width: 470px;
+  margin-left: -16px;
+}
+
+.video-mobile {
+  padding: 0;
+}
+
+.footer {
+  padding: 16px;
+  margin: 16px;
+  font-size: 12px;
+  width: 400px;
+}
+
+  }
